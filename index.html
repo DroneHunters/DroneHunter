@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Duck Clicker</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        #duck { width: 150px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Duck Clicker</h1>
+    <img id="duck" src="duck.png" alt="Duck">
+    <p>Монеты: <span id="coins">0</span></p>
+    
+    <script>
+        let coins = 0;
+        document.getElementById('duck').onclick = function() {
+            coins++;
+            document.getElementById('coins').textContent = coins;
+        };
+    </script>
+</body>
+</html>
